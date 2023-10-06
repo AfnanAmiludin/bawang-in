@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  [class*="col-"] {
+    float: left;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  icon{
+    background-color: rgb(230, 244, 208, 100);
+    display: flex;
+    width: 90vh;
+    height: 100vh;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (min-width: 390px) {
+    .image-person{
+      height: 14%;
+      width: 102%;
+    }
+    .image-logo{
+      height: 70px;
+      width: 200px;
+    }
+    .icon{
+      background-color: rgb(230, 244, 208, 100);
+      display: flex;
+      width: 459px;
+      height: 390vh;
+    }
+  }
+  @media screen and (min-width: 640px) {
+    .image-person{
+      height: 70%;
+      width: 60%;
+    }
+    .icon{
+      background-color: rgb(230, 244, 208, 100);
+      display: flex;
+      height: 98vh;
+  }
+  }
+  @media screen and (min-width: 768px) {
+    .image-person{
+      height: 300px;
+      width: 100px;
+      position: absolute;
+      top: 215px;
+      left: 138px;
+    }
+    .image-logo{
+      height: 70px;
+      width: 200px;
+      position: absolute;
+      top: 50px;
+    }
+    .image-daun{
+      height: 300px;
+      width: 72.5vh;
+      position: absolute;
+      top: 215px;
+    }
+    .icon{
+      background-color: rgb(230, 244, 208, 100);
+      display: flex;
+      width: 75vh;
+      height: 98vh;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (min-width: 857px) {
+    .image-person{
+      height: 300px;
+      width: 100px;
+      position: absolute;
+      top: 218px;
+      left: 161px;
+    }
+    .image-logo{
+      height: 70px;
+      width: 200px;
+      position: absolute;
+      top: 50px;
+    }
+    .image-daun{
+      height: 300px;
+      width: 84.5vh;
+      position: absolute;
+      top: 219px;
+    }
+    .icon{
+      background-color: rgb(230, 244, 208, 100);
+      display: flex;
+      width: 87vh;
+      height: 99vh;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .image-person{
+      height: 300px;
+      width: 100px;
+      position: absolute;
+      top: 224px;
+      left: 200px;
+    }
+    .image-logo{
+      height: 70px;
+      width: 200px;
+      position: absolute;
+      top: 50px;
+    }
+    .image-daun{
+      height: 300px;
+      width: 97.5vh;
+      position: absolute;
+      top: 224px;
+    }
+    .icon{
+      background-color: rgb(230, 244, 208, 100);
+      display: flex;
+      width: 90vh;
+      height: 100vh;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /*CSS Form */
+    .icon-2 .container{
+      position: absolute;
+      right: 100px;
+      height: 98vh;
+      width: 100vh;
+      padding: 10px;
+    }
+    .icon-2 .container .container{
+      height: 500px;
+      width: 400px;
+      position: absolute;
+      left: 280px;
+      top: 90px;
+      box-shadow: 0px 10px 10px 0px rgba(165, 165, 165, 0.19), 0 7px 10px 0 rgba(165, 165, 165, 0.19);
+      border-radius: 10px 10px;
+    }
+    .masuk{
+      color: rgb(45, 137, 57);
+      font-size: 50px;
+    }
+    .mail{
+      font-size: 16px;
+    }
+    .button{
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 5px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 2px;
+      cursor: pointer;
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    .image-person{
+      height: 520px;
+      width: 190px;
+      position: absolute;
+      top: 180px;
+      left: 277px;
+    }
+    .image-logo{
+      height: 120px;
+      width: 380px;
+      position: absolute;
+      top: 65px;
+      left: 173px;
+    }
+    .image-daun{
+      height: 520px;
+      width: 97.5vh;
+      position: absolute;
+      top: 180px;
+    }
+    .icon{
+      background-color: rgb(230, 244, 208, 100);
+      display: flex;
+      width: 100vh;
+      height: 98vh;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /*CSS Form */
+    .icon-2 .container{
+      position: absolute;
+      right: 100px;
+      height: 98vh;
+      width: 100vh;
+      padding: 10px;
+    }
+    .icon-2 .container .container{
+      height: 500px;
+      width: 400px;
+      position: absolute;
+      left: 280px;
+      top: 90px;
+      box-shadow: 0px 10px 10px 0px rgba(165, 165, 165, 0.19), 0 7px 10px 0 rgba(165, 165, 165, 0.19);
+      border-radius: 10px 10px;
+    }
+    .masuk{
+      color: rgb(45, 137, 57);
+      font-size: 50px;
+    }
+    .mail{
+      font-size: 16px;
+    }
+    .button{
+      background-color: rgb(45, 137, 57);
+      border: none;
+      color: white; 
+      padding: 6px 168px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 2px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .google{
+      background: rgba(45, 137, 57);
+      opacity: 0.3;
+      border: none;
+      color: rgba(0, 0, 0);
+      padding: 6px 168px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 2px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }

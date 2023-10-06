@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="{{asset('asset/css/auth/login.css')}}">
+        <link rel="stylesheet" href="{{asset('asset/css/auth/register.css')}}">
     </head>
     <body>          
           <div class="row">
@@ -21,11 +21,13 @@
                 <div class="container">
                   <div class="container">
                     <div class="form">
-                      <h2 class="masuk"><b>Masuk</b></h2>
+                      <h2 class="masuk"><b>Daftar</b></h2>
                       <form action="">
                         <h4 class="mail">Masukkan e-mail</h4>
                         <input type="text" placeholder="Email" class="form-control">
                         <h4 class="mail">Masukkan kata sandi</h4>
+                        <input type="password" placeholder="password" class="form-control">
+                        <h4 class="mail">Masukkan konfirmasi kata sandi</h4>
                         <input type="password" placeholder="password" class="form-control">
                         <h4 class="sandi">Lupa kata sandi?</h4>
                         <button class="button">Masuk</button>

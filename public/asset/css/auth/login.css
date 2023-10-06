@@ -21,140 +21,255 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-.icon{
+icon{
+  background-color: rgb(230, 244, 208, 100);
+  display: flex;
+  width: 90vh;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 390px) {
+  .image-person{
+    height: 14%;
+    width: 102%;
+  }
+  .image-logo{
+    height: 70px;
+    width: 200px;
+  }
+  .icon{
+    background-color: rgb(230, 244, 208, 100);
+    display: flex;
+    width: 459px;
+    height: 390vh;
+  }
+}
+@media screen and (min-width: 640px) {
+  .image-person{
+    height: 70%;
+    width: 60%;
+  }
+  .icon{
     background-color: rgb(230, 244, 208, 100);
     display: flex;
     height: 98vh;
 }
-.logo-1 {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
 }
-.logo-2 {
+@media screen and (min-width: 768px) {
+  .image-person{
+    height: 300px;
+    width: 100px;
     position: absolute;
-    top: 0px;
-    left: 130px;
-    display: flex;
-    align-items: center;
-}
-.form {
-    background-color: aqua;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    top: 215px;
+    left: 138px;
   }
-  body {
-    font-family: "Inter", sans-serif;
-  }
-  .formbold-main-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 48px;
-  }
-
-  .formbold-form-wrapper {
-    margin: 0 auto;
-    max-width: 550px;
-    width: 100%;
-    background: white;
-  }
-
-  .formbold-input-flex {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 22px;
-  }
-  .formbold-input-flex > div {
-    width: 50%;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .formbold-textarea {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .formbold-form-input {
-    width: 100%;
-    padding-bottom: 10px;
-    border: none;
-    border-bottom: 1px solid #DDE3EC;
-    background: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
-    color: #07074D;
-    outline: none;
-    resize: none;
-  }
-  .formbold-form-input::placeholder {
-    color: #536387;
-  }
-  .formbold-form-input:focus {
-    border-color: #6A64F1;
-  }
-  .formbold-form-label {
-    color: #07074D;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    display: block;
-    margin-bottom: 18px;
-  }
-  .formbold-form-input:focus + .formbold-form-label {
-    color: #6A64F1;
-  }
-
-  .formbold-input-file {
-    margin-top: 30px;
-  }
-  .formbold-input-file input[type="file"] {
+  .image-logo{
+    height: 70px;
+    width: 200px;
     position: absolute;
-    top: 6px;
-    left: 0;
-    z-index: -1;
+    top: 50px;
   }
-  .formbold-input-file .formbold-input-label {
+  .image-daun{
+    height: 300px;
+    width: 72.5vh;
+    position: absolute;
+    top: 215px;
+  }
+  .icon{
+    background-color: rgb(230, 244, 208, 100);
     display: flex;
-    align-items: center;
-    gap: 10px;
-    position: relative;
+    width: 75vh;
+    height: 98vh;
   }
-
-  .formbold-filename-wrapper {
+  .container{
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    margin-bottom: 22px;
   }
-  .formbold-filename {
+}
+@media screen and (min-width: 857px) {
+  .image-person{
+    height: 300px;
+    width: 100px;
+    position: absolute;
+    top: 218px;
+    left: 161px;
+  }
+  .image-logo{
+    height: 70px;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+  }
+  .image-daun{
+    height: 300px;
+    width: 84.5vh;
+    position: absolute;
+    top: 219px;
+  }
+  .icon{
+    background-color: rgb(230, 244, 208, 100);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
-    line-height: 24px;
-    color: #536387;
+    width: 87vh;
+    height: 99vh;
   }
-  .formbold-filename svg {
-    cursor: pointer;
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .image-person{
+    height: 300px;
+    width: 100px;
+    position: absolute;
+    top: 224px;
+    left: 200px;
+  }
+  .image-logo{
+    height: 70px;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+  }
+  .image-daun{
+    height: 300px;
+    width: 97.5vh;
+    position: absolute;
+    top: 224px;
+  }
+  .icon{
+    background-color: rgb(230, 244, 208, 100);
+    display: flex;
+    width: 90vh;
+    height: 100vh;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
   }
 
-  .formbold-btn {
+  /*CSS Form */
+  .icon-2 .container{
+    position: absolute;
+    right: 100px;
+    height: 98vh;
+    width: 100vh;
+    padding: 10px;
+  }
+  .icon-2 .container .container{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    left: 280px;
+    top: 90px;
+    box-shadow: 0px 10px 10px 0px rgba(165, 165, 165, 0.19), 0 7px 10px 0 rgba(165, 165, 165, 0.19);
+    border-radius: 10px 10px;
+  }
+  .masuk{
+    color: rgb(45, 137, 57);
+    font-size: 50px;
+  }
+  .mail{
     font-size: 16px;
-    border-radius: 5px;
-    padding: 12px 25px;
+  }
+  .button{
+    background-color: #4CAF50;
     border: none;
-    font-weight: 500;
-    background-color: #6A64F1;
     color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
     cursor: pointer;
-    margin-top: 25px;
   }
-  .formbold-btn:hover {
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+@media screen and (min-width: 1300px) {
+  .image-person{
+    height: 520px;
+    width: 190px;
+    position: absolute;
+    top: 180px;
+    left: 277px;
   }
+  .image-logo{
+    height: 120px;
+    width: 380px;
+    position: absolute;
+    top: 65px;
+    left: 173px;
+  }
+  .image-daun{
+    height: 520px;
+    width: 97.5vh;
+    position: absolute;
+    top: 180px;
+  }
+  .icon{
+    background-color: rgb(230, 244, 208, 100);
+    display: flex;
+    width: 100vh;
+    height: 98vh;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*CSS Form */
+  .icon-2 .container{
+    position: absolute;
+    right: 100px;
+    height: 98vh;
+    width: 100vh;
+    padding: 10px;
+  }
+  .icon-2 .container .container{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    left: 280px;
+    top: 90px;
+    box-shadow: 0px 10px 10px 0px rgba(165, 165, 165, 0.19), 0 7px 10px 0 rgba(165, 165, 165, 0.19);
+    border-radius: 10px 10px;
+  }
+  .masuk{
+    color: rgb(45, 137, 57);
+    font-size: 50px;
+  }
+  .mail{
+    font-size: 16px;
+  }
+  .button{
+    background-color: rgb(45, 137, 57);
+    border: none;
+    color: white; 
+    padding: 6px 168px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .google{
+    background: rgba(45, 137, 57);
+    opacity: 0.3;
+    border: none;
+    color: rgba(0, 0, 0);
+    padding: 6px 168px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
