@@ -21,131 +21,101 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-icon{
-  background-color: rgb(230, 244, 208, 100);
-  display: flex;
-  width: 90vh;
-  height: 100vh;
-}
-.container{
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 370px) {
   .image-person{
-    height: 14%;
-    width: 102%;
+    height: 68.1vh;
+    width: 25vh;
+    position: absolute;
+    top: 19vh;
+    left: 30.5vh;
   }
   .image-logo{
-    height: 70px;
-    width: 200px;
+    height: 100px;
+    width: 290px;
+    position: absolute;
+    top: 8vh;
+    left: 190px;
+  }
+  .image-daun{
+    height: 68.1vh;
+    width: 78vh;
+    position: relative;
+    top: 19vh;
   }
   .icon{
     background-color: rgb(230, 244, 208, 100);
-    display: flex;
-    width: 459px;
-    height: 390vh;
+    display: inline-block;
+    width: 79.8vh;
+    height: 87vh;
+    position: absolute;
+    left: auto;
   }
+
+  /*CSS Form */
+  .icon-2 .container{
+    position: absolute;
+    right: auto;
+    height: 100vh;
+    width: 62vh;
+    padding: 10px;
+  }
+  .icon-2 .container .container{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 29vh;
+    left: 16vh;
+    box-shadow: 0px 10px 10px 0px rgba(165, 165, 165, 0.19), 0 7px 10px 0 rgba(165, 165, 165, 0.19);
+    border-radius: 10px 10px;
+  }
+  .masuk{
+    color: rgb(45, 137, 57);
+    font-size: 50px;
+  }
+  .mail{
+    font-size: 16px;
+  }
+  .button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  } 
 }
 @media screen and (min-width: 640px) {
   .image-person{
-    height: 70%;
-    width: 60%;
-  }
-  .icon{
-    background-color: rgb(230, 244, 208, 100);
-    display: flex;
-    height: 98vh;
-}
-}
-@media screen and (min-width: 768px) {
-  .image-person{
-    height: 300px;
-    width: 100px;
+    height: 68.1vh;
+    width: 25vh;
     position: absolute;
-    top: 215px;
-    left: 138px;
+    top: 250px;
+    left: 26.6vh;
   }
   .image-logo{
-    height: 70px;
-    width: 200px;
+    height: 100px;
+    width: 290px;
     position: absolute;
-    top: 50px;
+    top: 118px;
+    left: 150px;
   }
   .image-daun{
-    height: 300px;
-    width: 72.5vh;
-    position: absolute;
-    top: 215px;
+    height: 68.1vh;
+    width: 68.4vh;
+    position: relative;
+    top: 32vh;
   }
   .icon{
     background-color: rgb(230, 244, 208, 100);
     display: flex;
-    width: 75vh;
-    height: 98vh;
-  }
-  .container{
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 857px) {
-  .image-person{
-    height: 300px;
-    width: 100px;
-    position: absolute;
-    top: 218px;
-    left: 161px;
-  }
-  .image-logo{
-    height: 70px;
-    width: 200px;
-    position: absolute;
-    top: 50px;
-  }
-  .image-daun{
-    height: 300px;
-    width: 84.5vh;
-    position: absolute;
-    top: 219px;
-  }
-  .icon{
-    background-color: rgb(230, 244, 208, 100);
-    display: flex;
-    width: 87vh;
-    height: 99vh;
-  }
-  .container{
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .image-person{
-    height: 300px;
-    width: 100px;
-    position: absolute;
-    top: 224px;
-    left: 200px;
-  }
-  .image-logo{
-    height: 70px;
-    width: 200px;
-    position: absolute;
-    top: 50px;
-  }
-  .image-daun{
-    height: 300px;
-    width: 97.5vh;
-    position: absolute;
-    top: 224px;
-  }
-  .icon{
-    background-color: rgb(230, 244, 208, 100);
-    display: flex;
-    width: 90vh;
+    width: 70vh;
     height: 100vh;
+    position: absolute;
+    left: auto;
   }
   .container{
     display: flex;
@@ -155,17 +125,230 @@ icon{
   /*CSS Form */
   .icon-2 .container{
     position: absolute;
-    right: 100px;
-    height: 98vh;
-    width: 100vh;
+    right: auto;
+    height: 100vh;
+    width: 62vh;
     padding: 10px;
   }
   .icon-2 .container .container{
     height: 500px;
     width: 400px;
     position: absolute;
-    left: 280px;
-    top: 90px;
+    top: 17vh;
+    left: 5vh;
+    box-shadow: 0px 10px 10px 0px rgba(165, 165, 165, 0.19), 0 7px 10px 0 rgba(165, 165, 165, 0.19);
+    border-radius: 10px 10px;
+  }
+  .masuk{
+    color: rgb(45, 137, 57);
+    font-size: 50px;
+  }
+  .mail{
+    font-size: 16px;
+  }
+  .button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  } 
+}
+@media screen and (min-width: 768px) {
+  .image-person{
+    height: 68.1vh;
+    width: 25vh;
+    position: absolute;
+    top: 250px;
+    left: 26.6vh;
+  }
+  .image-logo{
+    height: 100px;
+    width: 290px;
+    position: absolute;
+    top: 118px;
+    left: 150px;
+  }
+  .image-daun{
+    height: 68.1vh;
+    width: 68.4vh;
+    position: absolute;
+    top: 250px;
+  }
+  .icon{
+    background-color: rgb(230, 244, 208, 100);
+    display: flex;
+    width: 70vh;
+    height: 100vh;
+    position: absolute;
+    left: auto;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*CSS Form */
+  .icon-2 .container{
+    position: absolute;
+    right: auto;
+    height: 100vh;
+    width: 62vh;
+    padding: 10px;
+  }
+  .icon-2 .container .container{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 17vh;
+    left: 5vh;
+    box-shadow: 0px 10px 10px 0px rgba(165, 165, 165, 0.19), 0 7px 10px 0 rgba(165, 165, 165, 0.19);
+    border-radius: 10px 10px;
+  }
+  .masuk{
+    color: rgb(45, 137, 57);
+    font-size: 50px;
+  }
+  .mail{
+    font-size: 16px;
+  }
+  .button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 857px) {
+  .image-person{
+    height: 68.1vh;
+    width: 25vh;
+    position: absolute;
+    top: 250px;
+    left: 26.6vh;
+  }
+  .image-logo{
+    height: 100px;
+    width: 290px;
+    position: absolute;
+    top: 118px;
+    left: 150px;
+  }
+  .image-daun{
+    height: 68.1vh;
+    width: 68.4vh;
+    position: absolute;
+    top: 250px;
+  }
+  .icon{
+    background-color: rgb(230, 244, 208, 100);
+    display: flex;
+    width: 70vh;
+    height: 100vh;
+    position: absolute;
+    left: auto;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*CSS Form */
+  .icon-2 .container{
+    position: absolute;
+    right: auto;
+    height: 100vh;
+    width: 62vh;
+    padding: 10px;
+  }
+  .icon-2 .container .container{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 17vh;
+    left: 5vh;
+    box-shadow: 0px 10px 10px 0px rgba(165, 165, 165, 0.19), 0 7px 10px 0 rgba(165, 165, 165, 0.19);
+    border-radius: 10px 10px;
+  }
+  .masuk{
+    color: rgb(45, 137, 57);
+    font-size: 50px;
+  }
+  .mail{
+    font-size: 16px;
+  }
+  .button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .image-person{
+    height: 68.1vh;
+    width: 25vh;
+    position: absolute;
+    top: 250px;
+    left: 32vh;
+  }
+  .image-logo{
+    height: 100px;
+    width: 290px;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+  }
+  .image-daun{
+    height: 68.1vh;
+    width: 83.3vh;
+    position: absolute;
+    top: 250px;
+  }
+  .icon{
+    background-color: rgb(230, 244, 208, 100);
+    display: flex;
+    width: 84.9vh;
+    height: 100vh;
+    position: absolute;
+    left: auto;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*CSS Form */
+  .icon-2 .container{
+    position: absolute;
+    right: auto;
+    height: 100vh;
+    width: 80.5vh;
+    padding: 10px;
+  }
+  .icon-2 .container .container{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 17vh;
+    left: 15vh;
     box-shadow: 0px 10px 10px 0px rgba(165, 165, 165, 0.19), 0 7px 10px 0 rgba(165, 165, 165, 0.19);
     border-radius: 10px 10px;
   }
@@ -191,30 +374,32 @@ icon{
 }
 @media screen and (min-width: 1300px) {
   .image-person{
-    height: 520px;
+    height: 530px;
     width: 190px;
     position: absolute;
-    top: 180px;
-    left: 277px;
+    top: 32.6vh;
+    left: 37.7vh;
   }
   .image-logo{
     height: 120px;
     width: 380px;
     position: absolute;
-    top: 65px;
-    left: 173px;
+    top: 110px;
+    left: 200px;
   }
   .image-daun{
-    height: 520px;
-    width: 97.5vh;
+    height: 525px;
+    width: 98.5vh;
     position: absolute;
-    top: 180px;
+    top: 33.2vh;
   }
   .icon{
     background-color: rgb(230, 244, 208, 100);
     display: flex;
     width: 100vh;
-    height: 98vh;
+    height: 100vh;
+    position: absolute;
+    left: auto;
   }
   .container{
     display: flex;
@@ -224,17 +409,18 @@ icon{
   /*CSS Form */
   .icon-2 .container{
     position: absolute;
-    right: 100px;
-    height: 98vh;
+    right: auto;
+    height: 100vh;
     width: 100vh;
     padding: 10px;
+    display: flex;
   }
   .icon-2 .container .container{
     height: 500px;
     width: 400px;
     position: absolute;
-    left: 280px;
     top: 90px;
+    left: 23vh;
     box-shadow: 0px 10px 10px 0px rgba(165, 165, 165, 0.19), 0 7px 10px 0 rgba(165, 165, 165, 0.19);
     border-radius: 10px 10px;
   }

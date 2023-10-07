@@ -14,7 +14,7 @@
             <div class="icon">
               <div class="container">
                 <a href="#"><img src="{{asset('asset/image/bawangIn2.png')}}" class="image-logo"  alt=""></a>
-                <a href="#"><img src="{{asset('asset/image/login/daun.png')}}" class="image-daun"  alt=""></a>
+                <img src="{{asset('asset/image/login/daun.png')}}" class="image-daun"  alt="">
                 <a href="#"><img src="{{asset('asset/image/login/person.png')}}" class="image-person"  alt=""></a>
               </div>
               <div class="icon-2">
