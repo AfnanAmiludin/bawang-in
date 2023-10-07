@@ -22,11 +22,12 @@
                   <div class="container">
                     <div class="form">
                       <h2 class="masuk"><b>Masuk</b></h2>
-                      <form action="">
+                      <form action="/loginController" method="POST">
+                        @csrf
                         <h4 class="mail">Masukkan e-mail</h4>
-                        <input type="text" placeholder="Email" class="form-control">
+                        <input type="text" placeholder="Email" class="form-control" name="email">
                         <h4 class="mail">Masukkan kata sandi</h4>
-                        <input type="password" placeholder="password" class="form-control">
+                        <input type="password" placeholder="password" class="form-control" name="password">
                         <h4 class="sandi">Lupa kata sandi?</h4>
                         <button class="button">Masuk</button>
                       </form>

@@ -22,17 +22,18 @@
                   <div class="container">
                     <div class="form">
                       <h2 class="masuk"><b>Daftar</b></h2>
-                      <form action="">
+                      <form action="/registrasi" method="POST" onsubmit="return myFunction()">
+                        @csrf
                         <h4 class="mail">Masukkan e-mail</h4>
-                        <input type="text" placeholder="Email" class="form-control">
+                        <input type="text" placeholder="Email" class="form-control" name="email">
                         <h4 class="mail">Masukkan kata sandi</h4>
-                        <input type="password" placeholder="password" class="form-control">
+                        <input id="pass1" type="password" placeholder="password" class="form-control" name="password">
                         <h4 class="mail">Masukkan konfirmasi kata sandi</h4>
-                        <input type="password" placeholder="password" class="form-control">
+                        <input id="pass2" type="password" placeholder="password" class="form-control">
                         <h4 class="sandi">Lupa kata sandi?</h4>
                         <button class="button">Masuk</button>
                       </form>
-                      <h5 class="akun">Belum punya akun? <a href="#" style="color: rgb(45, 137, 57)">Daftar sekarang</a></h5>
+                      <h5 class="akun">Sudah punya akun? <a href="/login" style="color: rgb(45, 137, 57)">Masuk</a></h5>
                       <h5 class="atau">Atau</h5>
                       <button class="google">Masuk</button>
                     </div>
@@ -43,6 +44,23 @@
             
             
           </div>
+          <script>
+            function myFunction() {
+              var pass1 = document.getElementById("pass1").value;
+              var pass2 = document.getElementById("pass2").value;
+              var ok = true;
+              if (pass1 != pass2) {
+                  //alert("Passwords Do not match");
+                  document.getElementById("pass1").style.borderColor = "#E34234";
+                  document.getElementById("pass2").style.borderColor = "#E34234";
+                  return false;
+              }
+              else {
+                  alert("Passwords Match!!!");
+              }
+              return ok;
+            }
+          </script>
           
     </body>
 </html>
