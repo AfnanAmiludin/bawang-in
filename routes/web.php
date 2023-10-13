@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+ROute::get('/seller', function () {
+    return view('seller.seller');
+});
 Route::get('/logout', [authController::class, 'logout'])->name('logout');
 Route::get('/login', function () {
     return view('auth.login');
