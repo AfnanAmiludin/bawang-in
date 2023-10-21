@@ -17,9 +17,9 @@
                 <li><a class="page" href="#">Pesanan</a></li>
             </ul>
             <div class="icon" style="">
-                <a class="icon-a" href="#"><img src="{{asset('asset/icon/shop.png')}}" alt=""></a>
-                <a class="icon-b" href="#"><img src="{{asset('asset/icon/notif.png')}}" alt=""></a>
-                <a class="icon-c" href="#"><img src="{{asset('asset/icon/person.png')}}" alt=""></a>
+                <a class="icon-sub" href="#"><img src="{{asset('asset/icon/shop.png')}}" alt=""></a>
+                <a class="icon-sub" href="#"><img src="{{asset('asset/icon/notif.png')}}" alt=""></a>
+                <a class="icon-sub" href="#"><img src="{{asset('asset/icon/person.png')}}" alt=""></a>
             </div>
         </nav>
         <head>
@@ -55,6 +55,28 @@
                     <h4><b>Bawang Merah Nganjuk</b></h4> 
                     <p><b>25.000 /kg</b></p> 
                     <div class="content-9"><button class="tambah-produk">Tambah Produk</button></div>
+                </div>
+            </div>
+            <div class="background-head-5">
+                <div class="container-2">
+                    <h1>About Bawangin</h1>
+                    <p>Buy Fruits & Vegetables Online with the best offers and get home delivery across Indonesia. Find great deals on Fruits & Vegetables when shopping online easily and safely.</p>
+                </div>
+                <div class="container-3">
+                    <div class="container-footer-1">
+                        <h1>Quick Link</h1>
+                        <a href=""><h3>Home</h3></a>
+                        <a href=""><h3>Home</h3></a>
+                        <a href=""><h3>Home</h3></a>
+                    </div>
+                    <div class="container-footer-2">
+                        <h1>Contact Us</h1>
+                        <a href=""><h3>Whatsapp</h3></a>
+                        <a href=""><h3>Gmail</h3></a>
+                    </div>
+                </div>
+                <div class="container-4">
+                    <p>Proudly powereed by <b>Bawangin</b></p>
                 </div>
             </div>
         </head>

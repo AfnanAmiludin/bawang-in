@@ -17,9 +17,26 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-ROute::get('/seller', function () {
+//Seller
+Route::get('/seller', function () {
     return view('seller.seller');
 });
+Route::get('/seller-add-product', function () {
+    return view('seller.addProduct');
+});
+Route::get('/seller-edit-product', function () {
+    return view('seller.editProduct');
+});
+Route::get('/seller-page-product', function () {
+    return view('seller.pageProduct');
+});
+Route::get('/seller-order-product', function () {
+    return view('seller.orderProduct');
+});
+Route::get('/seller-proses-product', function () {
+    return view('seller.proses');
+});
+//End Seller
 Route::get('/logout', [authController::class, 'logout'])->name('logout');
 Route::get('/login', function () {
     return view('auth.login');

@@ -16,10 +16,10 @@
                 <li><a class="page" href="#">Home</a></li>
                 <li><a class="page" href="#">Home</a></li>
             </ul>
-            <div class="icon">
-                <a class="icon-a" href="#"><img src="{{asset('asset/icon/shop.png')}}" alt=""></a>
-                <a class="icon-b" href="#"><img src="{{asset('asset/icon/notif.png')}}" alt=""></a>
-                <a class="icon-c" href="#"><img src="{{asset('asset/icon/person.png')}}" alt=""></a>
+            <div class="icon" style="">
+                <a class="icon-sub" href="#"><img src="{{asset('asset/icon/shop.png')}}" alt=""></a>
+                <a class="icon-sub" href="#"><img src="{{asset('asset/icon/notif.png')}}" alt=""></a>
+                <a class="icon-sub" href="#"><img src="{{asset('asset/icon/person.png')}}" alt=""></a>
             </div>
         </nav>
         <head>
