@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Role;
 use App\Models\User;
+use App\Models\UserRole;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -14,12 +16,18 @@ class authController extends Controller
         $attribute = $request->validate([
             'name',
             'email'     => ['required'],
-            'password'  => ['required']
+            'password'  => ['required'],
+            'role' => ['required']
         ]);
+        $role = Role::where('name', $attribute['role'])->first();
         $attribute['password'] = Hash::make($request->password);
         $attribute['name'] = 'user';
         // dd($attribute);
-        User::create($attribute);
+        $user = User::create($attribute);
+        UserRole::create([
+            'user_id' => $user->id,
+            'role_id' => $role->id
+        ]);
         return redirect()->route('login');
     }
     public function login(Request $request)
@@ -32,7 +40,7 @@ class authController extends Controller
             return back()->with('loginError', 'login failed, please sign-in again!');
         }
         $request->session()->regenerate();
-        return redirect()->route('succes');
+        return redirect()->route('role-page');
     }
     public function logout(Request $request)
     {

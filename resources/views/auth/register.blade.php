@@ -30,10 +30,21 @@
                         <input id="pass1" type="password" placeholder="password" class="form-control" name="password">
                         <h4 class="mail">Masukkan konfirmasi kata sandi</h4>
                         <input id="pass2" type="password" placeholder="password" class="form-control">
-                        <h4 class="sandi">Lupa kata sandi?</h4>
-                        <button class="button">Masuk</button>
+                        <h4 class="mail">Login sebagai: </h4>
+                        <div class="radio">
+                          <div>
+                            <input type="radio" id="huey" name="role" value="penjual" checked />
+                            <label for="huey">Sebagai penjual</label>
+                          </div>
+                          <div>
+                            <input type="radio" id="huey" name="role" value="pembeli" checked />
+                            <label for="huey">Sebagai pembeli</label>
+                          </div>
+                        </div>
+                        {{-- <h4 class="sandi">Lupa kata sandi?</h4> --}}
+                        <button class="button">Daftar</button>
                       </form>
-                      <h5 class="akun">Sudah punya akun? <a href="/login" style="color: rgb(45, 137, 57)">Masuk</a></h5>
+                      <h5 class="akun">Sudah punya akun? <a href="/" style="color: rgb(45, 137, 57)">Masuk</a></h5>
                       <h5 class="atau">Atau</h5>
                       <button class="google">Masuk</button>
                     </div>

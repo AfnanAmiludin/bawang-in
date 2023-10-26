@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\authController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\RidirectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+
 //Seller
 Route::get('/seller', function () {
     return view('seller.seller');
@@ -38,7 +38,7 @@ Route::get('/seller-proses-product', function () {
 });
 //End Seller
 Route::get('/logout', [authController::class, 'logout'])->name('logout');
-Route::get('/login', function () {
+Route::get('/', function () {
     return view('auth.login');
 })->name('login');
 Route::get('/regis', function () {
@@ -47,7 +47,15 @@ Route::get('/regis', function () {
 Route::post('/registrasi', [authController::class, 'registrasi']);
 Route::post('/loginController', [authController::class, 'login']);
 Route::middleware(['auth:sanctum'])->group(function () {
-    Route::get('/succes', function () {
-        return view('welcome');
-    })->name('succes');
+    Route::get('/rolePage', [RidirectController::class, 'rolePage'])->name('role-page');
+});
+Route::middleware(['auth:sanctum', 'penjualMiddleware'])->group(function () {
+    Route::get('/seller-add-product', function () {
+        return view('seller.addProduct');
+    })->name('seller-add-product');
+    Route::post('/create-produk', [ProductController::class, 'create'])->name('create-produk');
+});
+Route::middleware(['auth:sanctum', 'pembeliMiddleware'])->group(function () {
+    Route::get('/home', [ProductController::class, 'show'])->name('home-page');
+    Route::get('/pembeli-produk', [ProductController::class, 'showProduk'])->name('produk-pembeli');
 });

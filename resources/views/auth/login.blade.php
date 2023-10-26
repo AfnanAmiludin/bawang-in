@@ -31,7 +31,7 @@
                         <h4 class="sandi">Lupa kata sandi?</h4>
                         <button class="button">Masuk</button>
                       </form>
-                      <h5 class="akun">Belum punya akun? <a href="#" style="color: rgb(45, 137, 57)">Daftar sekarang</a></h5>
+                      <h5 class="akun">Belum punya akun? <a href="/regis" style="color: rgb(45, 137, 57)">Daftar sekarang</a></h5>
                       <h5 class="atau">Atau</h5>
                       <button class="google">Masuk</button>
                     </div>

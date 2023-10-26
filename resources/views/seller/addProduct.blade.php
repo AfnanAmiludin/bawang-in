@@ -18,9 +18,9 @@
                 <li><a class="page" href="#">Pesanan</a></li>
             </ul>
             <div class="icon" style="">
-                <a class="icon-sub" href="#"><img src="{{asset('asset/icon/shop.png')}}" alt=""></a>
-                <a class="icon-sub" href="#"><img src="{{asset('asset/icon/notif.png')}}" alt=""></a>
-                <a class="icon-sub" href="#"><img src="{{asset('asset/icon/person.png')}}" alt=""></a>
+                <a class="icon-sub" href="/logout"><img src="{{asset('asset/icon/shop.png')}}" alt=""></a>
+                <a class="icon-sub" href="/logout"><img src="{{asset('asset/icon/notif.png')}}" alt=""></a>
+                <a class="icon-sub" href="/logout"><img src="{{asset('asset/icon/person.png')}}" alt=""></a>
             </div>
         </nav>
         <head>
@@ -29,39 +29,39 @@
                 <h1>Tambah Produk</h1>
             </div>
             <div class="background-head-1">
-                <form action="#" method="POST" >
+                <form action="/create-produk" method="POST" >
                     @csrf
                     <div class="form-container-1">
                         <h3 class="kategori">Kategori</h3>
-                        <input type="text" placeholder="Email" class="form-control-1" name="email">
+                        <input type="text" placeholder="kategori" class="form-control-1" name="kategori">
                     </div>
                     <div class="form-container-1">
                         <h3 class="grade">Grade </h3>
-                        <input id="pass1" type="password" placeholder="password" class="form-control-2" name="password">
+                        <input id="pass1" type="text" placeholder="grade" class="form-control-2" name="grade">
                     </div>
                     <div class="form-container-1">
                         <h3 class="nama-produk">Nama Produk </h3>
-                        <input id="pass2" type="text" placeholder="password" class="form-control-3">
+                        <input id="pass2" type="text" placeholder="nama produk" class="form-control-3" name="nama_produk">
                     </div>
                     <div class="form-container-1">
                         <h3 class="deskripsi">Deskripsi </h3>
-                        <input id="pass2" type="text" placeholder="password" class="form-control-4">
+                        <input id="pass2" type="text" placeholder="deskripsi" class="form-control-4" name="deskripsi">
                     </div>
                     <div class="form-container-1">
                         <h3 class="stok">Stok </h3>
-                        <input id="pass2" type="text" placeholder="password" class="form-control-5">
+                        <input id="pass2" type="text" placeholder="stok" class="form-control-5" name="stok">
                     </div>
                     <div class="form-container-1">
                         <h3 class="harga-normal">Harga Normal </h3>
-                        <input id="pass2" type="text" placeholder="password" class="form-control-6">
+                        <input id="pass2" type="text" placeholder="harga normal" class="form-control-6" name="harga_normal">
                     </div>
                     <div class="form-container-1">
-                        <h3 class="minim-grosir">Minimal Pembelian Harga Grosir </h3>
-                        <input id="pass2" type="text" placeholder="password" class="form-control-7">
+                        <h3 class="minim-grosir">Minimal Pembelian harga grosir</h3>
+                        <input id="pass2" type="text" placeholder="Minimal Pembelian" class="form-control-7" name="minim_pembelian">
                     </div>
                     <div class="form-container-1">
                         <h3 class="grosir">Harga Grosir </h3>
-                        <input id="pass2" type="text" placeholder="password" class="form-control-8">
+                        <input id="pass2" type="text" placeholder="harga grosir" class="form-control-8" name="harga_grosir">
                     </div>
                     <div class="form-container-2">
                         <button class="button">Simpan Produk</button>

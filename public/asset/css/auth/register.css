@@ -21,6 +21,12 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.radio{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+}
+
 @media screen and (min-width: 370px) {
   .image-person{
     height: 68.1vh;
@@ -416,7 +422,7 @@
     display: flex;
   }
   .icon-2 .container .container{
-    height: 500px;
+    height: 550px;
     width: 400px;
     position: absolute;
     top: 90px;
